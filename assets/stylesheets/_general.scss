@@ -1,0 +1,19 @@
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  padding: 10px 20px;
+  background: $primary-color;
+}
