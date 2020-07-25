@@ -1,7 +1,7 @@
-.section-1 {
-  background: white;
-  margin-top: calc(100vh - 76px);
+.section-5 {
+  padding-bottom: 4rem;
   .heading-div {
+    outline: 1px solid red;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -17,13 +17,12 @@
     }
   }
   .content-div {
-    width: 85%;
-    margin: 50px auto 0;
-    .icon {
-      width: 49%;
-      height: 150px;
-      outline: 1px solid red;
-      margin-bottom: 30px;
+    width: 80%;
+    margin: 3rem auto 0;
+    .col {
+      width: 30%;
+      height: 400px;
+      box-shadow: 0 0 7px rgb(196, 196, 196);
     }
   }
 }

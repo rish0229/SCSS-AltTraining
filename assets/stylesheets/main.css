@@ -224,6 +224,8 @@ a {
 header {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1.5rem 0;
+  position: relative;
+  z-index: 10;
 }
 
 .logo h1 {
@@ -257,7 +259,6 @@ header {
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: -1;
   background-position: center;
   background-size: cover;
 }
@@ -265,7 +266,6 @@ header {
 .hero .welcome-div {
   width: 50%;
   height: calc(100vh - 76px);
-  outline: 1px solid red;
   margin: 76px auto 0;
   color: white;
   text-align: center;
@@ -296,7 +296,6 @@ header {
 }
 
 .section-1 .heading-div {
-  outline: 1px solid red;
   text-align: center;
   width: 50%;
   margin: 0 auto;
@@ -418,5 +417,85 @@ header {
   width: 62.5%;
   outline: 1px solid red;
   height: 500px;
+}
+
+.section-4 .container {
+  text-align: center;
+}
+
+.section-4 .container h3 {
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.section-4 iframe {
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0 0 30px #aa6c6c;
+          box-shadow: 0 0 30px #aa6c6c;
+}
+
+.section-5 {
+  padding-bottom: 4rem;
+}
+
+.section-5 .heading-div {
+  outline: 1px solid red;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.section-5 .heading-div h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-5 .heading-div img {
+  margin: 15px 0;
+}
+
+.section-5 .heading-div p {
+  color: #2e2e2e;
+}
+
+.section-5 .content-div {
+  width: 80%;
+  margin: 3rem auto 0;
+}
+
+.section-5 .content-div .col {
+  width: 30%;
+  height: 400px;
+  -webkit-box-shadow: 0 0 7px #c4c4c4;
+          box-shadow: 0 0 7px #c4c4c4;
+}
+
+.section-6 {
+  height: 450px;
+}
+
+.section-6 .map,
+.section-6 .contact {
+  width: 50%;
+}
+
+.section-6 .contact {
+  background: url(../media/contact-bg.jpg);
+  background-size: cover;
+  height: 450px;
+}
+
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  background: black;
+}
+
+footer small {
+  font-size: 0.77rem;
+  font-family: monospace;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

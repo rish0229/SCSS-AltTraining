@@ -4,13 +4,11 @@
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: -1;
   background-position: center;
   background-size: cover;
   .welcome-div {
     width: 50%;
     height: calc(100vh - 76px);
-    outline: 1px solid red;
     margin: 76px auto 0;
     color: $accent-color;
     text-align: center;
