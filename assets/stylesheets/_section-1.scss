@@ -21,9 +21,28 @@
     margin: 50px auto 0;
     .icon {
       width: 49%;
-      height: 150px;
-      outline: 1px solid red;
+      height: 100px;
       margin-bottom: 30px;
+      .description {
+        width: 75%;
+        h6 {
+          text-transform: capitalize;
+          font-weight: 600;
+        }
+        p {
+          color: rgb(82, 82, 82);
+          margin: 8px 0;
+        }
+        a {
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: $primary-color;
+          &:hover {
+            color: rgb(214, 117, 117);
+          }
+        }
+      }
     }
   }
 }

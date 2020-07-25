@@ -157,6 +157,14 @@ h4 {
   font-size: 1.3rem;
 }
 
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 0.9rem;
   line-height: 1.5;
@@ -210,7 +218,7 @@ a {
 
 .btn:hover {
   background: transparent;
-  color: white;
+  color: #ed563a;
 }
 
 .highlight {
@@ -219,6 +227,13 @@ a {
 
 .padding {
   padding: 4rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header {
@@ -321,9 +336,33 @@ header {
 
 .section-1 .content-div .icon {
   width: 49%;
-  height: 150px;
-  outline: 1px solid red;
+  height: 100px;
   margin-bottom: 30px;
+}
+
+.section-1 .content-div .icon .description {
+  width: 75%;
+}
+
+.section-1 .content-div .icon .description h6 {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.section-1 .content-div .icon .description p {
+  color: #525252;
+  margin: 8px 0;
+}
+
+.section-1 .content-div .icon .description a {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ed563a;
+}
+
+.section-1 .content-div .icon .description a:hover {
+  color: #d67575;
 }
 
 .section-2 {
@@ -362,7 +401,6 @@ header {
 }
 
 .section-3 .heading-div {
-  outline: 1px solid red;
   text-align: center;
   width: 50%;
   margin: 0 auto;
@@ -388,15 +426,25 @@ header {
 
 .section-3 .content-div .col-1-2 {
   width: 32.5%;
-  height: 500px;
 }
 
 .section-3 .content-div .col-1-2 .schedule-item {
   width: 100%;
-  height: 90px;
+  height: 80px;
   -webkit-box-shadow: 0 0 8px #d1d1d1;
           box-shadow: 0 0 8px #d1d1d1;
   margin-bottom: 20px;
+  padding: 0 50px 0 20px;
+}
+
+.section-3 .content-div .col-1-2 .schedule-item h5 {
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.section-3 .content-div .col-1-2 .schedule-item h5 a:hover {
+  color: #ed563a;
 }
 
 .section-3 .content-div .col-1-2 .big-btn {
@@ -414,9 +462,24 @@ header {
 }
 
 .section-3 .content-div .col-2-2 {
-  width: 62.5%;
-  outline: 1px solid red;
-  height: 500px;
+  width: 64%;
+}
+
+.section-3 .content-div .col-2-2 img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.section-3 .content-div .col-2-2 h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.section-3 .content-div .col-2-2 p {
+  margin: 20px 0;
 }
 
 .section-4 .container {
@@ -434,6 +497,7 @@ header {
   border-radius: 1.25rem;
   -webkit-box-shadow: 0 0 30px #aa6c6c;
           box-shadow: 0 0 30px #aa6c6c;
+  height: 500px;
 }
 
 .section-5 {
@@ -441,7 +505,6 @@ header {
 }
 
 .section-5 .heading-div {
-  outline: 1px solid red;
   text-align: center;
   width: 50%;
   margin: 0 auto;
@@ -467,9 +530,19 @@ header {
 
 .section-5 .content-div .col {
   width: 30%;
-  height: 400px;
+  height: 380px;
   -webkit-box-shadow: 0 0 7px #c4c4c4;
           box-shadow: 0 0 7px #c4c4c4;
+  padding: 20px;
+}
+
+.section-5 .content-div .col p {
+  margin-top: 12px;
+}
+
+.section-5 .content-div .col h5 {
+  font-weight: bold;
+  margin: 12px 0;
 }
 
 .section-6 {
@@ -485,6 +558,62 @@ header {
   background: url(../media/contact-bg.jpg);
   background-size: cover;
   height: 450px;
+  text-align: center;
+}
+
+.section-6 .contact form {
+  background: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.section-6 .contact form .name {
+  margin-right: 10px;
+}
+
+.section-6 .contact form .name,
+.section-6 .contact form .email {
+  width: 48.7%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #acacac;
+}
+
+.section-6 .contact form .name:focus,
+.section-6 .contact form .email:focus {
+  outline: none;
+}
+
+.section-6 .contact form .subject {
+  width: 100%;
+  margin: 15px 0 0;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #acacac;
+}
+
+.section-6 .contact form .subject:focus {
+  outline: none;
+}
+
+.section-6 .contact form textarea {
+  width: 100%;
+  resize: vertical;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #acacac;
+  border-radius: 10px;
+}
+
+.section-6 .contact form textarea:focus {
+  outline: none;
+}
+
+.section-6 .contact form .small-btn {
+  font-size: 0.75rem;
 }
 
 footer {

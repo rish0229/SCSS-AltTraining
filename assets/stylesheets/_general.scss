@@ -31,7 +31,7 @@ a {
   display: inline-block;
   &:hover {
     background: transparent;
-    color: white;
+    color: $primary-color;
   }
 }
 .highlight {
@@ -39,4 +39,9 @@ a {
 }
 .padding {
   padding: 4rem 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }

@@ -1,7 +1,6 @@
 .section-5 {
   padding-bottom: 4rem;
   .heading-div {
-    outline: 1px solid red;
     text-align: center;
     width: 50%;
     margin: 0 auto;
@@ -21,8 +20,16 @@
     margin: 3rem auto 0;
     .col {
       width: 30%;
-      height: 400px;
+      height: 380px;
       box-shadow: 0 0 7px rgb(196, 196, 196);
+      padding: 20px;
+      p {
+        margin-top: 12px;
+      }
+      h5 {
+        font-weight: bold;
+        margin: 12px 0;
+      }
     }
   }
 }

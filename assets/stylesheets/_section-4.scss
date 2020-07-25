@@ -1,6 +1,4 @@
 .section-4 {
-  // background: linear-gradient(rgb(83, 59, 59), rgb(134, 95, 95));
-  // padding: 4rem;
   .container {
     text-align: center;
     h3 {
@@ -13,5 +11,6 @@
   iframe {
     border-radius: 1.25rem;
     box-shadow: 0 0 30px rgb(170, 108, 108);
+    height: 500px;
   }
 }
