@@ -1,18 +1,26 @@
 header {
-  background-color: rgba(128, 128, 128, 0.7);
-  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
 }
 .logo {
   h1 {
     text-transform: uppercase;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 900;
+    color: $accent-color;
+    span {
+      color: $primary-color;
+    }
   }
 }
 .nav-item {
-  margin-left: 20px;
   text-transform: uppercase;
   a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    color: $accent-color;
+    padding: 0.75rem 1rem;
+    &:hover {
+      color: $primary-color;
+    }
   }
 }

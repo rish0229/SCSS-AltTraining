@@ -134,12 +134,11 @@ table {
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: 'roboto' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'roboto' 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -150,8 +149,29 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
 .container {
-  max-width: 85%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -160,44 +180,243 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrap {
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 0.75rem 1rem;
   background: #ed563a;
+  border: 1px solid #ed563a;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: transparent;
+  color: white;
+}
+
+.highlight {
+  color: #ed563a;
+}
+
+.padding {
+  padding: 4rem 0;
 }
 
 header {
-  background-color: rgba(128, 128, 128, 0.7);
-  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
 }
 
 .logo h1 {
   text-transform: uppercase;
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 900;
+  color: white;
+}
+
+.logo h1 span {
+  color: #ed563a;
 }
 
 .nav-item {
-  margin-left: 20px;
   text-transform: uppercase;
 }
 
 .nav-item a {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  color: white;
+  padding: 0.75rem 1rem;
+}
+
+.nav-item a:hover {
+  color: #ed563a;
+}
+
+.hero {
+  background: url(../media/slide-01.jpg);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .welcome-div {
+  width: 50%;
+  height: calc(100vh - 76px);
+  outline: 1px solid red;
+  margin: 76px auto 0;
+  color: white;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .welcome-div p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero .welcome-div h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 25px 0 40px;
+}
+
+.section-1 {
+  background: white;
+  margin-top: calc(100vh - 76px);
+}
+
+.section-1 .heading-div {
+  outline: 1px solid red;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.section-1 .heading-div h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-1 .heading-div img {
+  margin: 15px 0;
+}
+
+.section-1 .heading-div p {
+  color: #2e2e2e;
+}
+
+.section-1 .content-div {
+  width: 85%;
+  margin: 50px auto 0;
+}
+
+.section-1 .content-div .icon {
+  width: 49%;
+  height: 150px;
+  outline: 1px solid red;
+  margin-bottom: 30px;
+}
+
+.section-2 {
+  height: 340px;
+  background: url(../media/cta-bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.section-2 .register {
+  outline: 2px solid red;
+  width: 100%;
+  padding: 0 25%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-2 .register h3 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-2 .register p {
+  color: white;
+  margin: 30px 0;
+}
+
+.section-3 .heading-div {
+  outline: 1px solid red;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.section-3 .heading-div h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-3 .heading-div img {
+  margin: 15px 0;
+}
+
+.section-3 .heading-div p {
+  color: #2e2e2e;
+}
+
+.section-3 .content-div {
+  width: 80%;
+  margin: 50px auto 0;
+}
+
+.section-3 .content-div .col-1-2 {
+  width: 32.5%;
+  height: 500px;
+}
+
+.section-3 .content-div .col-1-2 .schedule-item {
+  width: 100%;
+  height: 90px;
+  -webkit-box-shadow: 0 0 8px #d1d1d1;
+          box-shadow: 0 0 8px #d1d1d1;
+  margin-bottom: 20px;
+}
+
+.section-3 .content-div .col-1-2 .big-btn {
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.section-3 .content-div .col-1-2 .big-btn:hover {
+  color: #ed563a;
+}
+
+.section-3 .content-div .col-2-2 {
+  width: 62.5%;
+  outline: 1px solid red;
+  height: 500px;
 }
 /*# sourceMappingURL=main.css.map */

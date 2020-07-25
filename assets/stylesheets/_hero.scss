@@ -1,7 +1,30 @@
 .hero {
-  background: linear-gradient(black, black), url(../media/slide-01.jpg);
+  background: url(../media/slide-01.jpg);
   height: 100vh;
   width: 100%;
   position: absolute;
   top: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  .welcome-div {
+    width: 50%;
+    height: calc(100vh - 76px);
+    outline: 1px solid red;
+    margin: 76px auto 0;
+    color: $accent-color;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin: 25px 0 40px;
+    }
+  }
 }
