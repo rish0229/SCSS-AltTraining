@@ -642,7 +642,7 @@ footer small {
 
 @media screen and (max-width: 400px) {
   .container {
-    max-width: 99%;
+    max-width: 95%;
   }
   .container .content-div {
     -webkit-box-orient: vertical;
@@ -656,29 +656,69 @@ footer small {
   }
   .container .heading-div p {
     text-align: justify;
+    font-size: 0.8rem;
+  }
+  .container p {
+    font-size: 0.8rem;
   }
   header .nav {
     display: none;
+  }
+  header .logo h1 {
+    font-size: 1.5rem;
+  }
+  .hero .welcome-div {
+    width: 80%;
+  }
+  .hero .welcome-div p {
+    font-size: 0.8rem;
+  }
+  .hero .welcome-div h2 {
+    font-size: 1.6rem;
   }
   .section-1 .content-div .icon {
     width: 100%;
     padding: 0;
   }
+  .section-1 .content-div .icon img {
+    height: 80px;
+  }
   .section-1 .content-div .icon .description {
     width: 100%;
     margin-left: 20px;
   }
+  .section-1 .content-div .icon .description h6 {
+    font-size: 0.9rem;
+  }
+  .section-1 .content-div .icon .description p {
+    font-size: 0.8rem;
+  }
+  .section-2 .register {
+    padding: 0;
+  }
+  .section-2 .register h3 {
+    font-size: 1.5rem;
+  }
+  .section-2 .register p {
+    font-size: 0.8rem;
+  }
   .section-3 .content-div .col-1-2 {
     width: 100%;
   }
-  .section-3 .content-div .col-1-2 a.highlight {
+  .section-3 .content-div .col-1-2 a {
+    font-size: 1rem;
+  }
+  .section-3 .content-div .col-1-2 a .highlight {
     color: black;
   }
   .section-3 .content-div .col-2-2 {
     display: none;
   }
+  .section-4 h3 {
+    font-size: 1.8rem;
+  }
   .section-4 iframe {
-    height: 200px;
+    height: 250px;
   }
   .section-5 .content-div .col {
     width: 100%;
@@ -703,6 +743,9 @@ footer small {
   }
   .section-6 .contact form textarea {
     height: 100px;
+  }
+  footer small {
+    font-size: 0.5rem;
   }
   .logo {
     z-index: 10;

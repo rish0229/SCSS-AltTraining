@@ -2,7 +2,7 @@
   // GENERAL
 
   .container {
-    max-width: 99%;
+    max-width: 95%;
     .content-div {
       flex-direction: column;
       width: 100%;
@@ -11,7 +11,11 @@
       width: 100%;
       p {
         text-align: justify;
+        font-size: 0.8rem;
       }
+    }
+    p {
+      font-size: 0.8rem;
     }
   }
 
@@ -20,6 +24,25 @@
   header {
     .nav {
       display: none;
+    }
+    .logo {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  // HERO
+
+  .hero {
+    .welcome-div {
+      width: 80%;
+      p {
+        font-size: 0.8rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -30,10 +53,33 @@
       .icon {
         width: 100%;
         padding: 0;
+        img {
+          height: 80px;
+        }
         .description {
           width: 100%;
           margin-left: 20px;
+          h6 {
+            font-size: 0.9rem;
+          }
+          p {
+            font-size: 0.8rem;
+          }
         }
+      }
+    }
+  }
+
+  // SECTION-2
+
+  .section-2 {
+    .register {
+      padding: 0;
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.8rem;
       }
     }
   }
@@ -44,8 +90,11 @@
     .content-div {
       .col-1-2 {
         width: 100%;
-        a.highlight {
-          color: black;
+        a {
+          font-size: 1rem;
+          .highlight {
+            color: black;
+          }
         }
       }
       .col-2-2 {
@@ -57,8 +106,11 @@
   // SECTION-4
 
   .section-4 {
+    h3 {
+      font-size: 1.8rem;
+    }
     iframe {
-      height: 200px;
+      height: 250px;
     }
   }
 
@@ -97,6 +149,15 @@
       }
     }
   }
+
+  // FOOTER
+
+  footer {
+    small {
+      font-size: 0.5rem;
+    }
+  }
+
   // TOOGLE BAR
 
   .logo {
