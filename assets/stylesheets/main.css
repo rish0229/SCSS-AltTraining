@@ -236,6 +236,18 @@ img {
      object-fit: cover;
 }
 
+label {
+  display: none;
+}
+
+.fa-hamburger {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
 header {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1.5rem 0;
@@ -626,5 +638,113 @@ footer small {
   font-size: 0.77rem;
   font-family: monospace;
   color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: 99%;
+  }
+  .container .content-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .container .heading-div {
+    width: 100%;
+  }
+  .container .heading-div p {
+    text-align: justify;
+  }
+  header .nav {
+    display: none;
+  }
+  .section-1 .content-div .icon {
+    width: 100%;
+    padding: 0;
+  }
+  .section-1 .content-div .icon .description {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .section-3 .content-div .col-1-2 {
+    width: 100%;
+  }
+  .section-3 .content-div .col-1-2 a.highlight {
+    color: black;
+  }
+  .section-3 .content-div .col-2-2 {
+    display: none;
+  }
+  .section-4 iframe {
+    height: 200px;
+  }
+  .section-5 .content-div .col {
+    width: 100%;
+    margin: 20px;
+  }
+  .section-6 .map {
+    display: none;
+  }
+  .section-6 .contact {
+    width: 100%;
+  }
+  .section-6 .contact form {
+    width: 80%;
+  }
+  .section-6 .contact form .name,
+  .section-6 .contact form .email {
+    width: 100%;
+    padding: 8px;
+  }
+  .section-6 .contact form .subject {
+    padding: 8px;
+  }
+  .section-6 .contact form textarea {
+    height: 100px;
+  }
+  .logo {
+    z-index: 10;
+  }
+  label {
+    display: block;
+    z-index: 10;
+  }
+  .fa-hamburger {
+    display: block;
+    color: beige;
+    font-size: 1.2rem;
+  }
+  .fa-hamburger:hover {
+    color: #ed563a;
+  }
+  #toggle:checked ~ .nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 120px;
+  }
+  #toggle:checked ~ .nav .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #toggle:checked ~ .nav .flex .nav-item {
+    padding: 18px 0;
+    width: 100%;
+    text-align: center;
+  }
+  #toggle:checked ~ .nav .flex .nav-item .btn {
+    width: 90%;
+    padding: 15px 0;
+    border-radius: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

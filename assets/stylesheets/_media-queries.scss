@@ -1,0 +1,141 @@
+@media screen and (max-width: 400px) {
+  // GENERAL
+
+  .container {
+    max-width: 99%;
+    .content-div {
+      flex-direction: column;
+      width: 100%;
+    }
+    .heading-div {
+      width: 100%;
+      p {
+        text-align: justify;
+      }
+    }
+  }
+
+  // HEADER
+
+  header {
+    .nav {
+      display: none;
+    }
+  }
+
+  // SECTION-1
+
+  .section-1 {
+    .content-div {
+      .icon {
+        width: 100%;
+        padding: 0;
+        .description {
+          width: 100%;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  // SECTION-3
+
+  .section-3 {
+    .content-div {
+      .col-1-2 {
+        width: 100%;
+        a.highlight {
+          color: black;
+        }
+      }
+      .col-2-2 {
+        display: none;
+      }
+    }
+  }
+
+  // SECTION-4
+
+  .section-4 {
+    iframe {
+      height: 200px;
+    }
+  }
+
+  // SECTION-5
+
+  .section-5 {
+    .content-div {
+      .col {
+        width: 100%;
+        margin: 20px;
+      }
+    }
+  }
+
+  // SECTION-6
+
+  .section-6 {
+    .map {
+      display: none;
+    }
+    .contact {
+      width: 100%;
+      form {
+        width: 80%;
+        .name,
+        .email {
+          width: 100%;
+          padding: 8px;
+        }
+        .subject {
+          padding: 8px;
+        }
+        textarea {
+          height: 100px;
+        }
+      }
+    }
+  }
+  // TOOGLE BAR
+
+  .logo {
+    z-index: 10;
+  }
+  label {
+    display: block;
+    z-index: 10;
+  }
+  .fa-hamburger {
+    display: block;
+    color: beige;
+    font-size: 1.2rem;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  #toggle:checked ~ .nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding-top: 120px;
+    .flex {
+      flex-direction: column;
+      .nav-item {
+        padding: 18px 0;
+        width: 100%;
+        text-align: center;
+        .btn {
+          width: 90%;
+          padding: 15px 0;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
